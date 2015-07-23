@@ -34,8 +34,8 @@ makeCacheMatrix <- function(x = matrix()) {
       ## The new value of m will thus be picked up by the getCacheMatrix
       ## function. 
       ## That would not happen, if the '<-' operator had been used and the
-      ## value of m in setmean remained purely local in that function. In that
-      ## case, the makeVector function (or more precisely the instance of
+      ## value of m in setInverseM remained purely local in that function. In that
+      ## case, the makeCacheMatrix function (or more precisely the instance of
       ## this function when it was invoked), would retain the NULL initialisation, 
       ## and getInverseM would thus still have the NULL value.
       
